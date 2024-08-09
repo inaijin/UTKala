@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item - AP-UTKala</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add Item</h1>
+    </header>
+    <main>
+        <div class="container add-item-container">
+            <form action="addItem" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required />
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="Category" required />
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="Price" required />
+
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="Quantity" required />
+
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="/">AP-UTKala</a>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

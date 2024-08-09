@@ -1,0 +1,599 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #222222;
+    color: #e0e0e0;
+    width: 100%;
+}
+
+a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.buyer-container {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-dark {
+    display: block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button-dark:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container select,
+.container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container select {
+    cursor: pointer;
+}
+
+.container button[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.error-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.error-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.error-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.error-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.error-container a:hover {
+    background-color: #555;
+}
+
+.add-item-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.add-item-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.add-item-container label {
+    color: #333;
+    text-align: left;
+}
+
+.add-item-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-item-container input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.add-item-container button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.add-item-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.wallet-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.balance-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.wallet-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.wallet-container label {
+    color: #333;
+    text-align: left;
+}
+
+.wallet-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wallet-container input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.wallet-container button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.wallet-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button-link:hover {
+    background-color: #555;
+}
+
+.items-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.item p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.item p strong {
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .item {
+        width: 100%;
+    }
+}
+
+.cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cart-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.cart-item p strong {
+    color: #666;
+}
+
+.cart-form {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.cart-form .form-group {
+    margin-bottom: 15px;
+}
+
+.cart-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.cart-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cart-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-form button:hover {
+    background-color: #555;
+}
+
+.cart-form .clear-cart {
+    background-color: #c62828;
+}
+
+.cart-form .clear-cart:hover {
+    background-color: #d32f2f;
+}
+
+.purchases-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.purchase-entry {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.purchase-entry h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.purchase-entry p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.purchase-entry p strong {
+    color: #666;
+}
+
+.purchase-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.purchase-item p {
+    margin: 4px 0;
+    color: #333;
+}
+
+.purchase-item p strong {
+    color: #444;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button-link:hover {
+    background-color: #555;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.message h2 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.error-message {
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    background-color: #fbeee6;
+}
+
+.error-message p {
+    margin: 10px 0;
+}
+
+.error-message .button-link {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.success-message {
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    background-color: #eafaf1;
+}
+
+.success-message p {
+    margin: 10px 0;
+}
+
+.success-message .button-link {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.button-link:hover {
+    opacity: 0.8;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

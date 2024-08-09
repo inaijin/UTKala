@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AP-UTKala</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container signup-container">
+        <h1>Sign Up</h1>
+        <form action="/signUp" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="seller">Seller</option>
+                <option value="buyer">Buyer</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="/signIn">Sign In</a></p>
+    </div>
+    <footer>
+        <a href="/">AP-UTKala</a>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

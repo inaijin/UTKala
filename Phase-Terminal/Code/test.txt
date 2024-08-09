@@ -1,0 +1,41 @@
+POST signup ? username ali password 123123 role seller address Karaj
+POST add_item ? name shokolat price 100 category chocolates refund 50 quantity 10
+POST add_item ? name shokolat3 price 200 category chocolates refund 50 quantity 10
+POST add_item ? name shokolat2 price 300 category chocolates quantity 10
+POST package_offer ? id 2,3 discount 20
+POST category_offer ? category chocolates discount 10
+POST total_cost_offer ? cost 1000 discount 15
+POST logout
+POST signup ? username ali2 password 123123 role seller address Karaj
+POST add_item ? name shokolatt price 100 category chocolates refund 50 quantity 10
+POST add_item ? name shokolatt3 price 200 category chocolates refund 50 quantity 10
+POST add_item ? name shokolatt2 price 300 category chocolates quantity 10
+POST category_offer ? category chocolates discount 50
+POST logout
+POST signup ? username kourosh password 123123 address Tehran role buyer
+POST increase_credit ? amount 10000
+GET wallet_balance
+POST comment ? id 1 message this_is_bad_food
+POST comment ? id 2 message this_is_average_food
+POST comment ? id 3 message this_is_good_food
+POST add_to_cart ? id 1 count 4
+POST add_to_cart ? id 2 count 6
+POST add_to_cart ? id 4 count 1
+POST purchase_cart ?
+POST rate ? id 1 rate 5
+POST rate ? id 2 rate 6
+POST logout
+POST signup ? username kourosh2 password 123123 address Karaj role buyer
+POST increase_credit ? amount 10000
+GET wallet_balance
+POST comment ? id 1 message not_bad
+POST comment ? id 2 message average
+POST comment ? id 3 message good
+GET list_offers ? username ali
+POST add_to_cart ? id 1 count 3
+POST add_to_cart ? id 2 count 2
+POST purchase_cart ?
+POST rate ? id 1 rate 6
+POST rate ? id 2 rate 7
+GET list_purchased
+POST logout

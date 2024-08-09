@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - AP-UTKala</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container signin-container">
+        <h1>Sign In</h1>
+        <form action="/signIn" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="/signUp">Sign Up</a></p>
+    </div>
+    <footer>
+        <a href="/">AP-UTKala</a>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
